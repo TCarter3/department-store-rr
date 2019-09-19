@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Button, Card } from "semantic-ui-react";
 import { Link, } from "react-router-dom";
 import axios from "axios";
+import styled from "styled-components";
 
 
 class Departments extends React.Component {
@@ -48,7 +49,7 @@ class Departments extends React.Component {
     render() {
         return(
         <div>
-            <Header as="h1">Departments:</Header>
+            <HeaderStyle>Departments:</HeaderStyle>
             <br />
             <Button as={Link} color="green" to="/departments/new">Add Department Store</Button>
             <br/>
@@ -60,5 +61,11 @@ class Departments extends React.Component {
         );
     };
 };
+
+const HeaderStyle = styled.div`
+color: blue !important; 
+font-size: 4rem;
+padding: 20px;
+`;
 
 export default Departments;

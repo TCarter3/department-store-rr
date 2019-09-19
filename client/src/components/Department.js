@@ -1,8 +1,9 @@
 import React from "react";
+import Items from "./Items";
 
 const Department = () => (
     <div>
-        YOOOO!
+        <Items />
     </div>
 );
 
